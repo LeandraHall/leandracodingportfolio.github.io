@@ -1,0 +1,345 @@
+
+body{
+    background-color: #000000;
+    color: #ffffff
+}
+
+
+.title-section{
+    display: flex;
+    justify-content: center;                
+    align-items: center;          
+    gap: 20px;                   
+    padding-top: 85px;
+    padding-right: 85px;
+    padding-bottom: 0px; 
+    padding-left: 85px;
+    text-transform: uppercase;
+    
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+
+}
+.center3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 0px 32px;
+    display: inline-block;
+    font-size: 75px;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    text-transform: uppercase;
+    line-height: 1;
+    background-color: transparent;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: black !important;
+}
+
+
+
+.about-section{
+    font-family: "Arimo", sans-serif;
+    display: flex;                
+    align-items: center;  
+    justify-content: center;       
+    gap: 20px;                    
+    padding: 250px;
+}
+
+.bio-text {
+    font-size: 16px;
+    color: white;
+    max-width: 600px;
+}
+
+.bio-text h1{
+    overflow: hidden; 
+    border-right: .15em solid #ffffff; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff }
+}
+
+.profileImage img {
+    width: 600px;                 
+    height: auto;                 
+    border-radius: 5%;           
+    display: block;               
+}
+
+.skills-section{
+    font-family: "Arimo", sans-serif;             
+    text-align: center;
+    padding: 400px;     
+}
+
+.skills-section h1 {
+    overflow: hidden; 
+    border-right: .15em solid #ffffff; 
+    white-space: nowrap;
+    margin: 0 auto;
+    display: inline-block;
+    width: 0;
+    animation: 
+      typing 2s steps(9, end) forwards,
+      blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 10ch } /* ch = number of characters in "MY SKILLS" */
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff }
+  }
+
+.projects-section{
+    font-family: "Arimo", sans-serif;
+    padding-top: 400px; 
+    padding-bottom: 40px;               
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid #ffffff;
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 2s steps(11, end) forwards,
+      blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 13ch } /* MY PROJECTS = 11 characters including space */
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff }
+  }
+  
+
+.art-portfolio{
+    font-family: "Arimo", sans-serif;
+    display: flex;                
+    align-items: center;  
+    justify-content: center;       
+    gap: 20px;                    
+    padding-top: 500px;
+}
+
+  
+  .shadow-dance-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    animation: shadow-dance 2s infinite;
+    text-transform: uppercase;}
+  
+  @keyframes shadow-dance {
+    0%, 100% {
+      text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    }
+    50% {
+      text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+    }
+  }
+
+.artist-text{
+    padding-left: 25px;
+    font-family: "Arimo", sans-serif;
+    font-size: 35px;
+    color: white;
+    max-width: 600px;
+}
+
+
+.websiteImage img{
+    width: 1200px;                 
+    border-radius: 5%;           
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease;   
+
+}
+
+.websiteImage img:hover {
+    transform: scale(1.1);
+}
+
+.afrotechie-website{
+    display: flex;                
+    align-items: center;  
+    justify-content: center;       
+    gap: 20px;                    
+    padding-top: 600px;
+}
+
+.afrotechie-text{
+    font-size: 35px;
+    font-family: "Arimo", sans-serif;
+    padding-right: 150px;
+    color: white;
+    max-width: 600px; 
+}
+
+.afrotechieImage img{
+    width: 1000px;                 
+    border-radius: 5%;           
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease;   
+}
+
+.afrotechieImage img:hover{
+    transform: scale(1.1);
+}
+
+.dotnetmiaui-website{
+    display: flex;
+    font-family: "Arimo", sans-serif;                
+    align-items: center;  
+    justify-content: center;       
+    gap: 20px;                    
+    padding-top: 600px;
+}
+
+.dotnetmiaui-text{
+    font-size: 35px;
+    font-family: "Arimo", sans-serif;
+    color: white;
+    max-width: 600px; 
+    padding-right: 150px;
+}
+
+.dotnetMiauiImage img{
+    width: 1000px;                 
+    border-radius: 5%;           
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease;   
+}
+
+.dotnetMiauiImage img:hover{
+    transform: scale(1.1);
+}
+
+.contact-section{
+    padding-top: 800px;
+    text-align: center;
+}
+
+.typewriter2 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid #ffffff;
+    white-space: nowrap;
+    width: 0;
+    animation:
+      typing 2s steps(11, end) forwards,
+      blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 16ch } /* MY PROJECTS = 11 characters including space */
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff }
+  }
+
+.button2{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 0px 32px;
+    display: inline-block;
+    font-size: 55px;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    text-transform: uppercase;
+    line-height: 1;
+    background-color: transparent;
+    outline: none;
+}
+
+.button2:hover {
+    background-color: #ffffff;
+    color: black !important;
+}
+
+
+.button3{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 40px 32px;
+    display: inline-block;
+    font-size: 55px;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    text-transform: uppercase;
+    line-height: 1;
+    background-color: transparent;
+    outline: none;
+}
+
+.button3:hover {
+    background-color: #ffffff;
+    color: black !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+    
+a:visited{
+    text-decoration: none;
+    color: white;
+}
